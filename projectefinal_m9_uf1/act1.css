@@ -1,0 +1,334 @@
+@media screen and (max-width: 576px){
+	.main{
+		display: block;
+	}
+	nav,aside,main,section{
+		width: 100%;
+		margin:0;
+	}
+	
+	.nav{
+		display: none;
+	}
+	label{
+		display: block;
+	}
+	#menu_des{
+	display: none;
+}
+#menu_des:checked ~ .nav{
+	width:80%;
+	display: block;
+	list-style: none;
+	margin:0;
+	padding: 0;
+	background-color: #090B17;
+	box-shadow: 0 6px 14px 2px #000000;
+	position: absolute;
+}
+.nav{
+	display: none;
+	
+}
+.grid{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(8,200px);
+	grid-gap: 3em;
+}
+}
+@media screen and (min-width: 577px) and (max-width: 992px){
+	nav, aside{
+	width: 20%;
+	}
+	main{
+		
+		width: 60%;
+	}
+	label{
+		display: none;
+	}
+	#menu_des{
+	display: none;
+	}
+
+	.nav{
+		display: block;
+		width:80%;
+		display: block;
+		list-style: none;
+		margin:0;
+		padding: 0;
+		background-color: #090B17;
+		box-shadow: 0 6px 14px 2px #000000;
+		
+	}
+	.iconoss{display: none;}
+	.fa-bars, .fas{display: none;}
+	.grid{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(8,200px);
+	grid-gap: 3em;
+}
+}
+
+@media screen and (min-width: 993px){
+	nav, aside{
+	width: 20%;
+	}
+	main{
+		
+		width: 60%;
+	}
+
+	#menu_des, label{
+	display: none;
+	}
+	.iconoss{display: none;}
+	.nav{
+		display: block;
+		width:80%;
+		display: block;
+		list-style: none;
+		margin:0;
+		padding: 0;
+		background-color: #090B17;
+		box-shadow: 0 6px 14px 2px #000000;
+		
+	}
+	.fa-bars, .fas{display: none;}
+	.grid{
+	display: grid;
+	grid-template-columns: 46% 46%;
+	grid-template-rows: repeat(4,200px);
+	grid-gap: 3em;
+}
+	}
+
+body{
+	background-color: #071425;
+	margin-bottom: 0;
+}
+*{
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+
+}
+a{
+	text-decoration: none;
+}
+h1,h2,h3{
+	font-weight: normal;
+}
+/*ponemos un borde a todas las siguientes etiquetas
+header, nav, main, aside, footer{
+	border: solid #000000;
+	color: white;
+}
+/*al header le damos una altura para que se vea mejor*/
+header{
+	display: flex;
+	height: 100px;
+	border-bottom: 1px solid #AEA736;
+	padding-bottom:  10px;
+	justify-content: center;
+	box-shadow: 0 6px 14px 2px #000000;
+	color: white;
+	align-self:center;
+	margin-bottom: 20px;
+}
+
+/*al section que contiene el nav, main y aside, lo ponemos en flex para que esten en horizontal y una anchura
+del 100% del body y una alineacion stretch para que tengan la misma altura*/
+div{
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+/*al ver la imagen vi que el nav y el aside ocupan el 20% aprox y que el main un 60%*/
+
+/*nav, aside{
+	width: 20%;
+}
+main{
+	background-image:url(imagenes/descarga.png);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: contain;
+	width: 60%;
+}*/
+nav{
+	padding: 5px;
+}
+
+.nav li{
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+	height: 40px;
+	
+}
+.nav li:hover{
+	background-color: #071425;
+	
+	border-bottom: 1px solid #AEA736;
+}
+
+.desplegable1{
+	display: none;
+}
+.modos:hover{
+	margin-bottom: 300px;
+}
+.modos:hover  .desplegable1{
+	
+	display: block;
+	list-style: none;
+	padding: 0;
+	background-color: #090B17;
+	box-shadow: 0 6px 14px 2px #000000;
+	margin-left: 20px;
+	margin-top: 21px;
+
+}
+
+.desplegable1 li{
+	
+	background-color: #090B17;
+}
+.al_inicio{
+	position: fixed;
+	bottom: 5px;
+	right: 10px;
+	
+
+}
+/*al main le ponemos una imagen de fondo , hacemos que no se repita, que se centre y que ocupe lo maximo*/
+
+section{
+	width: 90%;
+	background-color: #090B17;
+	box-shadow: 0 6px 14px 2px #000000;
+	padding: 10px;
+	margin-bottom: 25px;
+}
+.centrales{
+	text-align: center;
+	border-bottom: 1px solid #AEA736;
+
+}
+#smite img{
+	width: 100%;
+}
+iframe{
+	margin: 10px auto;
+}
+/*al footer tambien le damos una altura para que se vea mejor*/
+
+
+*{
+  font-family: 'Fjalla One', sans-serif;
+
+}
+img{
+	height: 100%;
+}
+
+
+.grid div{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 70% 30%;
+	box-shadow: 0 6px 14px 2px #000000;
+	border: 1px solid #AEA736;
+	padding: 5px;
+	text-align: center;
+
+}
+.grid div img{
+	height: 70%;
+	margin: auto;
+	box-shadow: 0 6px 14px 2px #000000;
+
+}
+.modos_juego article{
+	height: 500px;
+}
+.mapa{
+	float: left;
+	height: 60%;
+}
+aside{
+	padding:0;
+}
+aside h2{
+	margin:0;
+}
+aside div{
+	width: 100%;
+	background-color: #090B17;
+	box-shadow: 0 6px 14px 2px #000000;
+	display: block;
+}
+aside div img{
+	width: 90%;
+	margin-bottom: 20px;
+}
+footer{
+	background-color: #090B17;
+	padding: 5px;
+	display: flex;
+	
+}
+.info{
+	display: block;
+	width: 50%;
+	padding: 0 20px 20px 20px;
+}
+.sociales{
+	display: block;
+	width: 25%;
+
+}
+.sociales ul, .contactos ul{
+	padding-left: 30px;
+	padding: 0;
+}
+.sociales ul li, .contactos ul li{
+	display: flex;
+}
+.contactos{
+	display: block;
+	width: 25%;
+}
+.icono{
+	padding-top: 16px;
+	margin-right: 10px;
+}
+
+span{
+	color:#727272;
+	font-weight: normal;
+	display: block;
+	margin-bottom: 20px;
+}
+.content{
+	width: 100%;
+}
+.progressbar{
+	background-color: #CDCDCD;
+	height: 15px;
+	width: 100%;
+	border-radius: 7px;
+	margin-bottom:10px;
+}
+.progressbar  div {
+	background-color: #F2BA35;
+	height: 15px;
+	border-radius: 7px;
+	margin-bottom:10px;
+}
+strong.c_emphasy1{
+	color:#F2BA35;
+}
